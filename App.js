@@ -3,7 +3,9 @@ import { View, Text } from 'react-native';
 import firebase from 'firebase';
 
 import { Header, Button, CardSection } from './components/common';
-import { LoginForm } from './components/loginForm';
+// import { LoginForm } from './components/loginForm';
+
+import { Learning } from './components/learning';
 
 export default class App extends React.Component {
   state = {
@@ -50,8 +52,9 @@ export default class App extends React.Component {
   render() {
     return (
       <View>
-        <Header headerText="Todo App" />
-        {this.renderContent()}
+        {/*<Header headerText="Todo App" />
+        {this.renderContent()}*/}
+        <Learning />
       </View>
     );
   }
