@@ -6,6 +6,7 @@ import { Header, Button, CardSection } from './components/common';
 // import { LoginForm } from './components/loginForm';
 
 import { Learning } from './components/learning';
+import { BackgroundImage } from './components/common/backgroundImage';
 
 export default class App extends React.Component {
   state = {
@@ -51,11 +52,12 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <View>
-        {/*<Header headerText="Todo App" />
-        {this.renderContent()}*/}
-        <Learning />
-      </View>
+      <BackgroundImage>
+         <Learning />
+      </BackgroundImage>
     );
   }
 }
+  {/*<Header headerText="Todo App" />
+        {this.renderContent()}*/}
+        // <Learning />

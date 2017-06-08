@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, ListView } from 'react-native';
+import { Text, ListView, StyleSheet } from 'react-native';
 import firebase from 'firebase';
 import { Button , Card, CardSection, Input, Spinner } from './common';
 
@@ -65,7 +65,7 @@ export class LoginForm extends React.Component{
     }
 }
 
-const styles = {
+const styles ={
     Error: {
         color: 'red',
         textAlign: 'center'
